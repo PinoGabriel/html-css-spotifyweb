@@ -22,6 +22,33 @@ a {
     color: var(--list-color)
 }
 
+/* INIZIO NAV */
+
+nav img {
+    padding: 1rem;
+    width: 80%;
+}
+
+.nav-container {
+    padding: 0 1rem;
+}
+
+.fa-solid {
+    font-size: 1.2em;
+    color: var(--list-color);
+}
+
+.nav-container a {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.link-home {
+    color: white;
+}
+
+
+
 /* INIZIO MAIN */
 
 main {
