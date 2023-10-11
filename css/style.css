@@ -2,6 +2,7 @@
     --footer-height: 90px;
     --navbar-width: 12rem;
     --list-color: #74777C;
+    --upgrade-container-height: 75px
 }
 
 * {
@@ -33,7 +34,8 @@ nav img {
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    height: calc(100% - var(--footer-height));
+    height: calc(100vh - var(--footer-height) - var(--upgrade-container-height));
+    justify-content: space-between;
 }
 
 .nav-container .fa-solid {
@@ -58,6 +60,9 @@ nav img {
     color: white;
 }
 
+.nav-container hr {
+    border: 1px solid #74777C;
+}
 
 
 /* INIZIO MAIN */
@@ -89,6 +94,7 @@ main > section {
     display: flex;
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.4);
+    height: var(--upgrade-container-height);
 }
 
 .btn {
@@ -153,4 +159,12 @@ footer {
 
 .card img {
     width: 100%;
+}
+
+.footer-container {
+    padding: 1rem;
+}
+
+footer img {
+    max-height: 50px
 }
