@@ -109,6 +109,10 @@ footer {
     background: crimson;
 }
 
+.card {
+    width: calc(100% / 6);
+}
+
 .card img {
     width: 100%;
 }
