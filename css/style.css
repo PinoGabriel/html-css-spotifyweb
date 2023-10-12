@@ -299,3 +299,18 @@ footer span {
         font-size: 2em;
     }
 }
+
+
+/* HOVER */
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.h-white:hover {
+    color: white;
+}
+
+.fa-circle-play:hover {
+    transform: scale(1.1);
+}
