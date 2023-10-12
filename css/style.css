@@ -243,7 +243,7 @@ footer hr {
     height: 4px;
     border-radius: 5rem;
     width: 20%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -255,7 +255,7 @@ footer hr {
     border-radius: 50%;
     position: absolute;
     top: -5px;
-    left: 70px;
+    left: 20%;
     display: none;
 }
 
@@ -272,7 +272,7 @@ footer hr {
     height: 4px;
     border-radius: 5rem;
     width: 20%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -284,14 +284,8 @@ footer hr {
     border-radius: 50%;
     position: absolute;
     top: -5px;
-    left: 70px;
+    left: 20%;
     display: none;
-}
-
-.volume-player {
-    border: 2px solid #74777C;
-    border-radius: 5rem;
-    width: 10rem;
 }
 
 footer span {
