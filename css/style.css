@@ -230,10 +230,62 @@ footer hr {
     border-radius: 5px;
 }
 
-.line-player {
-    border: 2px solid #74777C;
+.line-player-big {
+    background-color: #74777C;
+    height: 4px;
     border-radius: 5rem;
-    width: 30rem;
+    width: 60%;
+    position: relative;
+}
+
+.line-player-small {
+    background-color: white;
+    height: 4px;
+    border-radius: 5rem;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bullet-player {
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 70px;
+    display: none;
+}
+
+.line-volume-big {
+    background-color: #74777C;
+    height: 4px;
+    border-radius: 5rem;
+    width: 30%;
+    position: relative;
+}
+
+.line-volume-small {
+    background-color: white;
+    height: 4px;
+    border-radius: 5rem;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bullet-volume {
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 70px;
+    display: none;
 }
 
 .volume-player {
@@ -259,6 +311,16 @@ footer span {
 @media only screen and (max-width:878px) {
     .card {
         width: calc(100% / 2);
+    }
+
+    #footer-icon-left {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .fa-heart {
+        padding-right: 0;
+        padding-bottom: 5px;
     }
 }
 
@@ -298,6 +360,18 @@ footer span {
     .fa-user {
         font-size: 2em;
     }
+
+    .footer-item {
+        display: none;
+    }
+
+    #footer-icon-right .fa-solid {
+        padding-right: 10px;
+    }
+
+    .line-volume-big {
+        display: none;
+    }
 }
 
 
@@ -315,6 +389,22 @@ footer span {
     transform: scale(1.1);
 }
 
-.h-playlist:hover {
+.h-playlist:hover a {
     color: white;
+}
+
+.line-player-big:hover .line-player-small {
+    background-color: yellowgreen;
+}
+
+.line-player-big:hover .bullet-player {
+    display: block;
+}
+
+.line-volume-big:hover .line-volume-small {
+    background-color: yellowgreen;
+}
+
+.line-volume-big:hover .bullet-volume {
+    display: block;
 }
