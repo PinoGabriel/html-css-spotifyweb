@@ -314,3 +314,7 @@ footer span {
 .fa-circle-play:hover {
     transform: scale(1.1);
 }
+
+.h-playlist:hover {
+    color: white;
+}
