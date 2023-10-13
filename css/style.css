@@ -116,11 +116,6 @@ main > section {
     color: white;
 }
 
-.list-item-container hr {
-    border: 1px solid #ADFF2F;
-    width: 30%;
-}
-
 .btn {
     border: 1px solid white;
     border-radius: 2rem;
@@ -136,6 +131,12 @@ main > section {
     flex-wrap: wrap;
 }
 
+.list-item-container hr {
+    border: 1px solid #ADFF2F;
+    width: 30%;
+    display: none;
+}
+
 .list-line {
     display: flex;
     justify-content: center;
@@ -146,7 +147,7 @@ main > section {
 .list-item {
     font-size: 0.9em;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .box-title {
@@ -439,6 +440,14 @@ footer span {
 
 .h-white:hover {
     color: white;
+}
+
+.h-white:hover hr {
+    display: block;
+}
+
+.list-line:hover hr {
+    display: block;
 }
 
 footer .fa-circle-play:hover {
