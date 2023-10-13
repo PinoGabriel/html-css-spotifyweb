@@ -438,16 +438,12 @@ footer span {
     transform: scale(1.1);
 }
 
-.h-white:hover {
-    color: white;
-}
-
-.h-white:hover hr {
-    display: block;
-}
-
 .list-line:hover hr {
     display: block;
+}
+
+.list-line:hover .h-white {
+    color: white;
 }
 
 footer .fa-circle-play:hover {
