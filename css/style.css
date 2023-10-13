@@ -82,23 +82,12 @@ nav img {
     height: 100%;
 }
 
-.height-playlist-item {
-    height: 40%;
-    overflow: auto;
-}
-
-.height-playlist-item::-webkit-scrollbar {
-    display: none;
-}
-
 /********************************* INIZIO MAIN *************************************/
 
 main {
     height: calc(100% - var(--footer-height));
     display: flex;
 }
-
-
 
 main > section {
     height: 100%;
@@ -113,7 +102,6 @@ main > section {
 #scroll::-webkit-scrollbar {
     display: none;
   }
-
 
 
 .upgrade-container {
@@ -170,6 +158,36 @@ main > section {
     display: flex;
 }
 
+.card {
+    width: calc(100% / 6);
+}
+
+.position {
+    position: relative;
+}
+
+.mask {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 12px) ;
+    display: none;
+}
+
+.mask i {
+   font-size: 50px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.card img {
+    width: 100%;
+}
+
 .artist {
     border-radius: 50%;
 }
@@ -188,14 +206,6 @@ p {
 footer {
     height: var(--footer-height);
     background-color: #282828;
-}
-
-.card {
-    width: calc(100% / 6);
-}
-
-.card img {
-    width: 100%;
 }
 
 .footer-container {
@@ -254,7 +264,7 @@ footer hr {
     height: 4px;
     border-radius: 5rem;
     width: 20%;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -266,7 +276,7 @@ footer hr {
     border-radius: 50%;
     position: absolute;
     top: -5px;
-    left: 20%;
+    left: 18%;
     display: none;
 }
 
@@ -283,7 +293,7 @@ footer hr {
     height: 4px;
     border-radius: 5rem;
     width: 20%;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -295,7 +305,7 @@ footer hr {
     border-radius: 50%;
     position: absolute;
     top: -5px;
-    left: 20%;
+    left: 18%;
     display: none;
 }
 
@@ -310,6 +320,15 @@ footer span {
     .card {
         width: calc(100% / 4);
         margin-bottom: 32px;
+    }
+
+    .height-playlist-item {
+        height: 40%;
+        overflow: auto;
+    }
+    
+    .height-playlist-item::-webkit-scrollbar {
+        display: none;
     }
 }
 
@@ -379,6 +398,26 @@ footer span {
     }
 }
 
+@media only screen and (max-width:480px) {
+
+
+    footer .w-50 .pr-32 {
+        padding-right: 16px;
+    }
+
+    footer .w-50 .px-32 {
+        padding: 0 16px;
+    }
+
+    footer .w-50 .mr-32 {
+        margin-right: 8px;
+    }
+
+    footer .w-50 .ml-32 {
+        margin-left: 8px;
+    }
+
+}
 
 /********************************************* HOVER **************************************/
 
@@ -390,7 +429,7 @@ footer span {
     color: white;
 }
 
-.fa-circle-play:hover {
+footer .fa-circle-play:hover {
     transform: scale(1.1);
 }
 
@@ -411,6 +450,10 @@ footer span {
 }
 
 .line-volume-big:hover .bullet-volume {
+    display: block;
+}
+
+.position:hover .mask {
     display: block;
 }
 
