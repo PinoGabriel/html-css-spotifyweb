@@ -446,6 +446,10 @@ footer span {
     color: white;
 }
 
+.h-white:hover {
+    color: white;
+}
+
 footer .fa-circle-play:hover {
     transform: scale(1.1);
 }
