@@ -116,6 +116,11 @@ main > section {
     color: white;
 }
 
+.list-item-container hr {
+    border: 1px solid #ADFF2F;
+    width: 30%;
+}
+
 .btn {
     border: 1px solid white;
     border-radius: 2rem;
@@ -131,10 +136,17 @@ main > section {
     flex-wrap: wrap;
 }
 
+.list-line {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .list-item {
     font-size: 0.9em;
     font-weight: 600;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
 }
 
 .box-title {
